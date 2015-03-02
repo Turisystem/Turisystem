@@ -269,7 +269,20 @@ body:not(#afui) .upage-outer {
   display: none;
 }
 @media all {
-  
+  #afui .wrapping-col > .d-margins,
+  #afui .wrapping-col > .afScrollPanel > .d-margins {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #afui .wrapping-col > .d-margins,
+  #afui .wrapping-col > .afScrollPanel > .d-margins {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  #afui .d-margins {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 }
 @media all and (min-width: 0px) {
   #afui .row-height-1 > .col > .content-area {
@@ -289,10 +302,7 @@ body:not(#afui) .upage-outer {
   height: 100%;
 }
 @media all {
-  #afui .iframe-size {
-    height: 100%;
-    width: 100%;
-  }
+  
 }
 @media all {
   #afui .image-gallery-size {
@@ -305,6 +315,6 @@ body:not(#afui) .upage-outer {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
   }
 }
